@@ -1,0 +1,65 @@
+.hidden {
+    display: none;
+}
+
+.cardTwo {
+    width: 315px;  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    z-index: 3;
+    top: 450px;  
+    left: 43%;
+    animation-name: cardTwo;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+.topTwo1 {
+    top: 450px;      
+}
+
+.topTwo2 {
+    top: 650px;      
+}
+
+.cardTwo img {
+    border: 3px solid #f0ff54;
+    border-radius: 50%;
+    background-color: #f0ff54;
+}
+
+.cardTwo div {
+    width: 220px;
+    height: 50px;
+    background-color: white;  
+    opacity: 0.7;
+    clip-path: polygon(0% 0%, 90% 0, 100% 50%, 90% 100%, 0% 100%);  
+    border-left: 8px solid #f0ff54;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardTwo p {
+    font-family: 'Inconsolata', monospace;
+    font-size: 15px;
+    padding-right: 10px;
+}
+
+@keyframes cardTwo {
+    0% {
+        opacity: 0.5;
+    }
+    50% {
+        opacity: 0.7;
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(-30px);
+    }
+}
+
+  

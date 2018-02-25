@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  background-image: url('../assets/img1.jpg');
+  background-attachment: fixed;
+}
+
+.main {
+  width: 100%;
+  height: 750px;
+  background: linear-gradient(#0dbcb2, #1bbae5);
+  opacity: 0.7;
+  position: absolute;
+  z-index: 2;
+  top: 150px;
+  clip-path: polygon(0 0, 100% 30%, 100% 100%, 0% 100%);
+}
+
+h1 {
+  position: absolute;
+  top: 120px;
+  left: 40%;
+  font-family: 'Inconsolata', monospace;
+  font-size: 20px;
+  color: #f0ff54;
+  border-bottom: 2px solid #f0ff54;
+  padding-bottom: 5px; 
+}

@@ -1,0 +1,66 @@
+.hidden {
+    display: none;
+}
+
+.cardOne {
+    width: 315px;  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    z-index: 3;
+    left: 20%;
+    animation-name: cardOne;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+.topOne1 {
+    top: 350px;      
+}
+
+.topOne2 {
+    top: 550px;      
+}
+
+
+.cardOne img {
+    border: 3px solid #f0ff54;
+    border-radius: 50%;
+    background-color: #f0ff54;
+}
+
+.cardOne div {
+    width: 220px;
+    height: 50px;
+    background-color: white;  
+    opacity: 0.7;
+    clip-path: polygon(10% 0%, 100% 1%, 100% 100%, 10% 100%, 0% 50%);
+    border-right: 8px solid #f0ff54;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.cardOne p {
+    font-family: 'Inconsolata', monospace;
+    font-size: 15px;
+    padding-left: 10px;
+}
+
+@keyframes cardOne {
+    0% {
+        opacity: 0.5;
+    }
+    50% {
+        opacity: 0.7;
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(30px);
+    }
+}
+
+  

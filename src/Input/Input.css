@@ -1,0 +1,36 @@
+.hidden {
+    display: none;
+}
+
+.inputt {
+    width: 445px;
+    height: 35px;
+    position: absolute;
+    bottom: -180px;
+    left: 25%;
+    z-index: 2;
+    border-radius: 30px;
+    border: 2px solid #f0ff54;
+    background: transparent;
+    background: url(../assets/pencil.png) no-repeat scroll 15px 7px;
+    animation-name: input;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes input {
+    0% {
+        opacity: 0.3;
+    }
+    45% {
+        opacity: 0.5;
+    }
+    70% {
+        opacity: 0.7;
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(-10px);
+    }
+}
